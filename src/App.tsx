@@ -5,8 +5,8 @@ import './App.css';
 function App() {
 
   function showDropdown(){
-    //var element = document.getElementById("dropdown");
-    //element.classList.toggle("show");
+   
+    document.getElementById("dropdown")!.classList.toggle("show");
     
   }
 
