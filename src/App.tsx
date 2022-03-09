@@ -7,7 +7,7 @@ function App() {
 
   function showDropdown(){
     var element = document.getElementById("dropdown");
-    element.classList.toggle("show");
+    //element.classList.toggle("show");
     
   }
 
