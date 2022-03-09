@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import logo from './logo.svg';
 import menu from './menu-one.svg';
 import './App.css';
@@ -6,7 +5,7 @@ import './App.css';
 function App() {
 
   function showDropdown(){
-    var element = document.getElementById("dropdown");
+    //var element = document.getElementById("dropdown");
     //element.classList.toggle("show");
     
   }
