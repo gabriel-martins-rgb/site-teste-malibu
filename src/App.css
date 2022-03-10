@@ -9,13 +9,29 @@
     }
     
     .App {
-        background-color: #9DAF60;
         width: 100vw;
         height: 100vh;
     }
     
+    .container {
+        background: url('/src/bg2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    
+    .idioma {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
     header {
-        background-color: rgb(255, 255, 255);
         width: 100vw;
         height: 14vh;
         display: flex;
@@ -42,7 +58,7 @@
         font-size: 1.2rem;
         display: inline-block;
         /* visual do link */
-        color: #333;
+        color: rgb(255, 255, 255);
         text-decoration: none;
         font-family: 'Work Sans', sans-serif;
     }
@@ -59,7 +75,8 @@
     }
     
     main {
-        height: 86%;
+        width: 100vw;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -119,6 +136,15 @@
     main .buttons .color-button-dark:hover {
         background: rgb(0, 0, 0);
         transition: 1s;
+    }
+    
+    span {
+        color: #fff;
+    }
+    
+    article {
+        width: 100%;
+        height: 100%;
     }
     
     @media (max-width: 576px) {
@@ -184,10 +210,65 @@
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
             color: #fff;
         }
+        .idioma {
+            display: none;
+        }
+        .info-footer {
+            background-color: #333;
+            height: 120vh;
+        }
+        .redes-sociale {
+            background-color: #fff;
+            height: 20vh;
+        }
+        .info-location {
+            color: #fff;
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: 'Work Sans';
+        }
+        .buttons-sociale {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+        .color-button-instagram {
+            background: linear-gradient(180deg, #FF7507 0%, #AD10B3 100%);
+            color: #fff;
+            font-size: 1.2rem;
+            width: 60vw;
+            height: 6vh;
+            border-radius: 50px;
+        }
+        .color-button-facebook {
+            background: #30487C;
+            color: #fff;
+            font-size: 1.2rem;
+            width: 60vw;
+            height: 6vh;
+            border-radius: 50px;
+            margin-top: 8%;
+        }
+        .container {
+            background: url('/src/bg2.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
     }
     
     @media (min-width: 768px) {}
     
     @media (min-width: 992px) {}
     
-    @media (min-width: 1200px) {}
+    @media (min-width: 1200px) {
+        #buttonMenu {
+            display: none;
+        }
+    }
